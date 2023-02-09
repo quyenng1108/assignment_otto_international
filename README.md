@@ -1,6 +1,6 @@
 # An assignment from Otto International
 
-A Photo app which users can view photos. There's a bookmark feature where users can save photos if they want to see them later.
+A Photo app where users can view photos. There's a bookmark feature where users can save photos if they want to see them later.
 
 Features that the app has:
 - View photos in an infinite list.
