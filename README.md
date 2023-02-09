@@ -16,3 +16,5 @@ Features that the app has:
 #### `pod install --repo-update`
 
 #### `flutter run`
+
+## The jks file should be put in /android folder

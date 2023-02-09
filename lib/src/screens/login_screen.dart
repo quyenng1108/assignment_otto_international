@@ -2,6 +2,7 @@ import 'package:assignment_otto_international/src/constants.dart';
 import 'package:assignment_otto_international/src/responsive_layout_builder.dart';
 import 'package:assignment_otto_international/src/routes.dart';
 import 'package:assignment_otto_international/src/state/authentication_state.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
@@ -67,7 +68,7 @@ class LoginScreen extends StatelessWidget {
                 height: 48,
                 width: 48,
                 child: SvgPicture.asset(
-                  icGoogle,
+                  kIsWeb ? icGoogleWeb : icGoogle,
                   fit: BoxFit.contain,
                 ),
               ),
@@ -83,7 +84,7 @@ class LoginScreen extends StatelessWidget {
                           ),
                         )
                       : const Text(
-                          "Sign In with Google",
+                          "Sign in with Google",
                           style: titleStyle,
                         ))
             ],
