@@ -1,16 +1,13 @@
-# assignment_otto_international
+# An assignment from Otto International
 
-A new Flutter project.
+A Photo app which users can view photos. There's a bookmark feature where users can save photos if they want to see them later.
 
-## Getting Started
+## How to run this app
+### Pre-build
+#### `flutter clean`
+#### `flutter pub get`
 
-This project is a starting point for a Flutter application.
+### if building iOS app
+#### `pod install --repo-update`
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### `flutter run`
