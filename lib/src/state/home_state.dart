@@ -17,7 +17,6 @@ class HomeState extends BaseState {
   Map<dynamic, dynamic> bookmarkList = {};
   final HiveStorage hive = getIt();
 
-
   // get list of book mark.
   void getBookmarkList() {
     bookmarkList = hive.bookmarkList;
@@ -50,6 +49,7 @@ class HomeState extends BaseState {
           ..addAll(response);
         page++;
         hasReachedMax = response.length < perPage;
+        if (isRefreshing) notifyListeners();
         dismissLoading();
         return;
       }

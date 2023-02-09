@@ -51,16 +51,16 @@ class RouteGeneration {
                 builder: (_) => ChangeNotifierProvider(
                     create: (_) => HomeState(), child: const HomeScreen()));
       default:
-        // return useMaterial
-        // ? MaterialPageRoute(builder: (_) => const LoginScreen())
-        // : CupertinoPageRoute(builder: (_) => const LoginScreen());
         return useMaterial
-            ? MaterialPageRoute(
-                builder: (_) => ChangeNotifierProvider(
-                    create: (_) => HomeState(), child: const HomeScreen()))
-            : CupertinoPageRoute(
-                builder: (_) => ChangeNotifierProvider(
-                    create: (_) => HomeState(), child: const HomeScreen()));
+            ? MaterialPageRoute(builder: (_) => const LoginScreen())
+            : CupertinoPageRoute(builder: (_) => const LoginScreen());
+      // return useMaterial
+      //     ? MaterialPageRoute(
+      //         builder: (_) => ChangeNotifierProvider(
+      //             create: (_) => HomeState(), child: const HomeScreen()))
+      //     : CupertinoPageRoute(
+      //         builder: (_) => ChangeNotifierProvider(
+      //             create: (_) => HomeState(), child: const HomeScreen()));
     }
   }
 }
